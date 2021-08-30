@@ -1,0 +1,32 @@
+{
+  "name": "api-node-type-surf",
+  "version": "1.0.0",
+  "description": "Api de surf",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./src ./test --ext .ts",
+    "lint:fix": "eslint ./src ./test --ext .ts --fix",
+    "start": "yarn build && node dist/src/index.js",
+    "start:dev": "ts-node-dev --respawn --transpliOnly --ignore-watch --no-notify src/index.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "leo-demetrio"
+  },
+  "author": "leo-demetrio",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/module-alias": "^2.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "eslint": "^7.32.0",
+    "ts-node-dev": "^1.0.0-pre.47",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "@types/node": "^16.7.8",
+    "module-alias": "^2.2.2"
+  }
+}
