@@ -1,1 +1,1 @@
-console.log("Funcionou")
+console.log(__dirname)
